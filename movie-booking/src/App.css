@@ -1,0 +1,194 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #111;
+  color: white;
+}
+
+.container {
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+/* CARD */
+.card {
+  background: #1f1f1f;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  background: #333;
+}
+
+.card img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+}
+
+.details-card {
+  background: #1f1f1f;
+  padding: 30px;
+  border-radius: 10px;
+  width: 400px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.details-card p {
+  margin: 10px 0;
+}
+.form-box {
+  background: #1f1f1f;
+  padding: 30px;
+  border-radius: 10px;
+  width: 350px;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-box input {
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: none;
+}
+
+.form-box button {
+  margin-top: 10px;
+}
+.confirm-box {
+  background: #1f1f1f;
+  padding: 40px;
+  border-radius: 10px;
+  width: 400px;
+  margin: 60px auto;
+  text-align: center;
+}
+/* BODY BACKGROUND */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #fdf0f5, #e3f2fd, #f3e5f5);
+  background-size: 400% 400%;
+  animation: gradientMove 10s ease infinite;
+  color: #5e548e;
+}
+
+/* Moving pastel background animation */
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.container {
+  padding: 40px;
+}
+
+/* Title */
+h1 {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 40px;
+  color: #6d597a;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+/* CARD */
+.card {
+  background: #ffffff;
+  border-radius: 25px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.4s ease;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+}
+
+.card:hover {
+  transform: translateY(-12px) scale(1.03);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+/* Movie Poster */
+.card img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+}
+
+/* Movie Name */
+.card h3 {
+  padding: 15px;
+  text-align: center;
+  font-weight: 600;
+  color: #6d597a;
+}
+
+/* DETAILS, FORM, CONFIRMATION BOX */
+.details-card,
+.form-box,
+.confirm-box {
+  background: #ffffff;
+  padding: 35px;
+  border-radius: 25px;
+  width: 420px;
+  margin: 60px auto;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+/* INPUTS */
+input {
+  padding: 12px;
+  margin: 12px 0;
+  border-radius: 12px;
+  border: 1px solid #e0c3fc;
+  width: 100%;
+  outline: none;
+  transition: 0.3s;
+}
+
+input:focus {
+  border: 1px solid #b8c0ff;
+  box-shadow: 0 0 10px rgba(184,192,255,0.5);
+}
+
+/* BUTTON */
+button {
+  padding: 12px;
+  margin-top: 15px;
+  border-radius: 15px;
+  border: none;
+  background: linear-gradient(135deg, #cdb4db, #bde0fe);
+  color: #5e548e;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.08);
+  background: linear-gradient(135deg, #ffc8dd, #a2d2ff);
+}

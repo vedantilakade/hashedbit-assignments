@@ -1,0 +1,48 @@
+.ipl-container {
+  width: 85%;
+  margin: 50px auto;
+  background: #f9fbff;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+.ipl-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #1e3c72;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background: linear-gradient(to right, #1e3c72, #2a5298);
+  color: white;
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: center;
+}
+
+tbody tr {
+  background-color: white;
+  border-bottom: 1px solid #ddd;
+}
+
+tbody tr:hover {
+  background-color: #eef3ff;
+}
+
+th {
+  font-size: 15px;
+}
+
+td {
+  font-size: 14px;
+}

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JS Practice 1 - Delta</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6fb;
+            padding: 30px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .box {
+            background: white;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .title {
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>JS Practice 1 - Delta</h1>
+
+<div id="output"></div>
+
+<script>
+
+let outputDiv = document.getElementById("output");
+
+function addOutput(title, value) {
+    outputDiv.innerHTML += `
+        <div class="box">
+            <div class="title">${title}</div>
+            <div>${value}</div>
+        </div>
+    `;
+}
+
+/* 1. Scope Example */
+function scopeExample() {
+    var a = 10;
+    let b = 20;
+    const c = 30;
+
+    if (true) {
+        var a = 40;
+        let b = 50;
+        const c = 60;
+    }
+
+    return `var: ${a}, let: ${b}, const: ${c}`;
+}
+addOutput("1. Scope Example", scopeExample());
+
+
+/* 2. Second Fruit */
+const fruits = ["Apple", "Banana", "Mango", "Orange", "Grapes"];
+function getSecondFruit(arr) {
+    return arr[1];
+}
+addOutput("2. Second Fruit", getSecondFruit(fruits));
+
+
+/* 3. Push & Pop */
+function modifyArray(arr) {
+    arr.push("New Item");
+    arr.pop();
+    return arr;
+}
+addOutput("3. Push & Pop", modifyArray([1,2,3]));
+
+
+/* 4. Square using map */
+const numbers = [1,2,3,4,5];
+function squareNumbers(arr) {
+    return arr.map(num => num * num);
+}
+addOutput("4. Squared Numbers", squareNumbers(numbers));
+
+
+/* 5. Filter Odd */
+const nums = [1,2,3,4,5,6];
+function getOddNumbers(arr) {
+    return arr.filter(num => num % 2 !== 0);
+}
+addOutput("5. Odd Numbers", getOddNumbers(nums));
+
+
+/* 6. Greeting */
+const person = {
+    name: "Vedanti",
+    age: 22,
+    occupation: "Student"
+};
+function greet(p) {
+    return `Hello, my name is ${p.name}. I am ${p.age} years old and I am a ${p.occupation}.`;
+}
+addOutput("6. Greeting", greet(person));
+
+
+/* 7. Rectangle Area */
+function areaRectangle(obj) {
+    return obj.width * obj.height;
+}
+addOutput("7. Rectangle Area", areaRectangle({width: 10, height: 5}));
+
+
+/* 8. Object Keys */
+const car = {brand:"Toyota", model:"Camry", year:2022};
+function getKeys(obj) {
+    return Object.keys(obj);
+}
+addOutput("8. Object Keys", getKeys(car));
+
+
+/* 9. Merge Objects */
+function mergeObjects(obj1, obj2) {
+    return Object.assign({}, obj1, obj2);
+}
+addOutput("9. Merged Object", JSON.stringify(mergeObjects({a:1}, {b:2})));
+
+
+/* 10. Sum using reduce */
+const arr = [10,20,30,40];
+function sumArray(numbers) {
+    return numbers.reduce((total, num) => total + num, 0);
+}
+addOutput("10. Sum using Reduce", sumArray(arr));
+
+</script>
+
+</body>
+</html>

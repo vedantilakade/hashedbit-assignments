@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* ===== HEADER ===== */
+.header {
+    background: #f6f5ff;
+    color: #4a4a68;
+    padding: 16px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.social a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: #6b6b8f;
+}
+
+/* ===== MENU ===== */
+.menu {
+    background: #ebe9ff;
+    text-align: center;
+    padding: 12px;
+}
+
+.menu a {
+    margin: 0 18px;
+    text-decoration: none;
+    color: #4a4a68;
+    font-weight: 500;
+}
+
+/* ===== LAYOUT ===== */
+.container {
+    display: flex;
+    padding: 25px;
+    background: #fafaff;
+}
+
+/* ===== SIDEBAR ===== */
+.sidebar {
+    width: 25%;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    animation: slideIn 1s ease;
+}
+
+.sidebar h3 {
+    margin-bottom: 10px;
+    color: #5a5aa3;
+}
+
+.sidebar ul {
+    margin-bottom: 15px;
+    padding-left: 20px;
+}
+
+/* ===== CONTENT ===== */
+.content {
+    width: 75%;
+    padding-left: 25px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* ===== EMOTION CARDS ===== */
+.card {
+    padding: 20px;
+    border-radius: 18px;
+    background: #ffffff;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+    animation: fadeUp 1s ease;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card h3 {
+    margin-bottom: 8px;
+}
+
+/* ===== AESTHETIC COLORS ===== */
+.calm {
+    background: #eef7f6;
+}
+
+.happy {
+    background: #fff6e5;
+}
+
+.sad {
+    background: #f1f3f8;
+}
+
+.angry {
+    background: #fdecec;
+}
+
+.thoughtful {
+    background: #f5f0ff;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+    background: #f6f5ff;
+    text-align: center;
+    padding: 15px;
+    color: #6b6b8f;
+    margin-top: 20px;
+}
+
+/* ===== ANIMATIONS ===== */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
